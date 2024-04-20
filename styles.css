@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #4CAF50, #2196F3);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+    padding: 10px;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 24px;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.message {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.end-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, #4CAF50, #2196F3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.end-message {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white; /* Text color on the end screen */
+}
+
+.new-game-btn {
+    font-size: 24px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Rectangle background */
+.rectangle {
+    position: absolute;
+    width: 20%; /* Adjust the width as needed */
+    height: 30%; /* Adjust the height as needed */
+    border-radius:10px;
+    background:Green; /* Blue gradient background */
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Border with opacity */
+    z-index: -1; /* Place it behind the content */
+}
+
+
